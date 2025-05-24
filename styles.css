@@ -136,10 +136,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border-radius: 8px;
-    background: linear-gradient(135deg, #3182ce, #63b3ed);
+    background: transparent;
 }
 
 .brand-text {
@@ -278,16 +278,30 @@ h1, h2, h3, h4, h5, h6 {
 .hero-image {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.hero-image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 500px;
 }
 
 .hero-img {
     width: 100%;
-    max-width: 500px;
-    height: 400px;
+    height: auto;
     object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(135deg, #e2e8f0, #cbd5e0);
+}
+
+.hero-img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
 /* Sections */
