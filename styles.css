@@ -1229,11 +1229,11 @@ h1, h2, h3, h4, h5, h6 {
 .accordion-content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.4s ease;
 }
 
 .accordion-content.active {
-    max-height: 400px; /* Reduced from 450px since we have columns now */
+    max-height: 800px; /* Significantly increased from 400px */
 }
 
 /* Compact Pricing Styles */
@@ -1531,7 +1531,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Adjust accordion content height for benefits */
 .accordion-content.active {
-    max-height: 350px; /* Reduced from 400px since we have 3 columns now */
+    max-height: 800px; /* Updated to match above */
 }
 
 /* Mobile responsiveness for benefits */
@@ -1541,7 +1541,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .accordion-content.active {
-        max-height: 450px; /* Increased for tablet view with 2 columns */
+        max-height: 900px; /* Increased for tablet view with 2 columns */
     }
 }
 
@@ -1552,7 +1552,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .accordion-content.active {
-        max-height: 600px; /* Significantly increased for mobile single column */
+        max-height: 1200px; /* Significantly increased for mobile single column */
     }
     
     .registration-benefits {
@@ -1569,5 +1569,20 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 0.85rem;
         gap: 0.5rem;
         padding: 0.3rem 0;
+    }
+    
+    .pricing-grid-compact {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .registration-form {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
 }
