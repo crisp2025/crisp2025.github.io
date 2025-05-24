@@ -203,9 +203,97 @@ function toggleAccordion(accordionId) {
 // Make toggleAccordion available globally
 window.toggleAccordion = toggleAccordion;
 
-// Initialize accordion state on page load
+// Dark Mode Toggle Functionality
+class ThemeManager {
+    constructor() {
+        this.theme = localStorage.getItem('theme') || 'light';
+        this.themeToggle = document.getElementById('theme-toggle');
+        this.init();
+    }
+
+    init() {
+        // Set initial theme
+        this.setTheme(this.theme);
+        
+        // Add event listener to toggle button
+        if (this.themeToggle) {
+            this.themeToggle.addEventListener('click', () => {
+                this.toggleTheme();
+            });
+        }
+
+        // Listen for system theme changes
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        mediaQuery.addListener((e) => {
+            if (!localStorage.getItem('theme')) {
+                this.setTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+    }
+
+    setTheme(theme) {
+        this.theme = theme;
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        this.updateToggleIcon();
+        this.updateNavbarOnScroll();
+    }
+
+    toggleTheme() {
+        const newTheme = this.theme === 'light' ? 'dark' : 'light';
+        this.setTheme(newTheme);
+        
+        // Add a subtle animation to indicate the change
+        document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
+        setTimeout(() => {
+            document.body.style.transition = '';
+        }, 300);
+    }
+
+    updateToggleIcon() {
+        if (this.themeToggle) {
+            const icon = this.themeToggle.querySelector('i');
+            if (icon) {
+                if (this.theme === 'dark') {
+                    icon.className = 'fas fa-sun';
+                    this.themeToggle.setAttribute('aria-label', 'Switch to light mode');
+                } else {
+                    icon.className = 'fas fa-moon';
+                    this.themeToggle.setAttribute('aria-label', 'Switch to dark mode');
+                }
+            }
+        }
+    }
+
+    updateNavbarOnScroll() {
+        // Update navbar background for current theme
+        const header = document.querySelector('.header');
+        if (header) {
+            const scrollY = window.scrollY;
+            if (this.theme === 'dark') {
+                header.style.background = scrollY > 100 ? 'rgba(26, 32, 44, 0.98)' : 'rgba(26, 32, 44, 0.95)';
+            } else {
+                header.style.background = scrollY > 100 ? 'rgba(255, 255, 255, 0.98)' : 'rgba(255, 255, 255, 0.95)';
+            }
+        }
+    }
+
+    // Get current theme
+    getCurrentTheme() {
+        return this.theme;
+    }
+
+    // Check if user prefers dark mode
+    prefersColorScheme() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    }
+}
+
+// Initialize theme manager when DOM is loaded
 document.addEventListener('DOMContentLoaded', function() {
-    // Start with both accordions open by default
+    window.themeManager = new ThemeManager();
+    
+    // Initialize existing accordion functionality
     const offlineAccordion = document.getElementById('offline-content');
     const offlineIcon = document.getElementById('offline-icon');
     const onlineAccordion = document.getElementById('online-content');
@@ -219,5 +307,30 @@ document.addEventListener('DOMContentLoaded', function() {
     if (onlineAccordion && onlineIcon) {
         onlineAccordion.classList.add('active');
         onlineIcon.classList.add('rotated');
+    }
+});
+
+// Update navbar scroll behavior to work with dark mode
+window.addEventListener('scroll', function() {
+    if (window.themeManager) {
+        window.themeManager.updateNavbarOnScroll();
+    } else {
+        // Fallback for before theme manager is initialized
+        const header = document.querySelector('.header');
+        if (window.scrollY > 100) {
+            header.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            header.style.background = 'rgba(255, 255, 255, 0.95)';
+        }
+    }
+});
+
+// Keyboard shortcut for theme toggle (Ctrl/Cmd + Shift + D)
+document.addEventListener('keydown', function(e) {
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'D') {
+        e.preventDefault();
+        if (window.themeManager) {
+            window.themeManager.toggleTheme();
+        }
     }
 });
