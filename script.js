@@ -29,28 +29,30 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 // Registration form price calculator
 const categorySelect = document.getElementById('category');
+const participationTypeSelect = document.getElementById('participationType');
 const priceDisplay = document.getElementById('priceDisplay');
 
 const prices = {
-    student: { earlyBird: '₹2,000', regular: '₹2,500' },
-    academic: { earlyBird: '₹4,000', regular: '₹5,000' },
-    industry: { earlyBird: '₹6,000', regular: '₹7,500' },
-    international: { earlyBird: '$150', regular: '$200' }
+    student: { offline: '₹3,500', online: '₹2,000' },
+    academic: { offline: '₹8,000', online: '₹4,000' },
+    industry: { offline: '₹12,000', online: '₹7,000' }
 };
 
-if (categorySelect && priceDisplay) {
-    categorySelect.addEventListener('change', function() {
-        const selectedCategory = this.value;
-        if (selectedCategory && prices[selectedCategory]) {
-            const price = prices[selectedCategory];
-            priceDisplay.innerHTML = `
-                <strong>${price.earlyBird}</strong> (Early Bird) / 
-                <strong>${price.regular}</strong> (Regular)
-            `;
-        } else {
-            priceDisplay.textContent = 'Select category to see price';
-        }
-    });
+function updatePrice() {
+    const selectedCategory = categorySelect?.value;
+    const selectedParticipationType = participationTypeSelect?.value;
+    
+    if (selectedCategory && selectedParticipationType && prices[selectedCategory] && priceDisplay) {
+        const price = prices[selectedCategory][selectedParticipationType];
+        priceDisplay.innerHTML = `<strong>${price}</strong>`;
+    } else if (priceDisplay) {
+        priceDisplay.textContent = 'Select category and participation type to see price';
+    }
+}
+
+if (categorySelect && participationTypeSelect && priceDisplay) {
+    categorySelect.addEventListener('change', updatePrice);
+    participationTypeSelect.addEventListener('change', updatePrice);
 }
 
 // Form submissions (since this is a standalone website, we'll show alerts)

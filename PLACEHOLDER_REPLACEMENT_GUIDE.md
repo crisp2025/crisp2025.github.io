@@ -19,6 +19,12 @@ This document lists all placeholders that need to be replaced with actual conten
 ### Sponsor Logos
 - `placeholder-sponsor-logo.png` → Replace with actual sponsor logos (4 placeholders total)
 
+### Conference Brochure
+- `brochure/CRISP2025-Brochure.pdf` → Create and upload the actual conference brochure PDF file
+  - File should be placed in a `brochure` folder in the website root directory
+  - Recommended file size: Under 5MB for faster downloads
+  - Should include: Conference overview, themes, speakers, schedule, registration info, venue details
+
 ## TEXT PLACEHOLDERS
 
 ### Contact Information
