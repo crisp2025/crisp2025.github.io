@@ -27,34 +27,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Registration form price calculator
-const categorySelect = document.getElementById('category');
-const participationTypeSelect = document.getElementById('participationType');
-const priceDisplay = document.getElementById('priceDisplay');
-
-const prices = {
-    student: { offline: '₹3,500', online: '₹2,000' },
-    academic: { offline: '₹8,000', online: '₹4,000' },
-    industry: { offline: '₹12,000', online: '₹7,000' }
-};
-
-function updatePrice() {
-    const selectedCategory = categorySelect?.value;
-    const selectedParticipationType = participationTypeSelect?.value;
-    
-    if (selectedCategory && selectedParticipationType && prices[selectedCategory] && priceDisplay) {
-        const price = prices[selectedCategory][selectedParticipationType];
-        priceDisplay.innerHTML = `<strong>${price}</strong>`;
-    } else if (priceDisplay) {
-        priceDisplay.textContent = 'Select category and participation type to see price';
-    }
-}
-
-if (categorySelect && participationTypeSelect && priceDisplay) {
-    categorySelect.addEventListener('change', updatePrice);
-    participationTypeSelect.addEventListener('change', updatePrice);
-}
-
 // Form submissions (since this is a standalone website, we'll show alerts)
 const forms = document.querySelectorAll('form');
 
@@ -62,8 +34,7 @@ forms.forEach(form => {
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const formType = this.classList.contains('reg-form') ? 'Registration' :
-                        this.classList.contains('submit-form') ? 'Submission' :
+        const formType = this.classList.contains('submit-form') ? 'Submission' :
                         this.classList.contains('contact-form-element') ? 'Contact' : 'Form';
         
         // Basic form validation
@@ -82,9 +53,6 @@ forms.forEach(form => {
         if (isValid) {
             alert(`${formType} submitted successfully! We will contact you soon.`);
             this.reset();
-            if (priceDisplay) {
-                priceDisplay.textContent = 'Select category to see price';
-            }
         } else {
             alert('Please fill in all required fields.');
         }
@@ -213,3 +181,43 @@ const footerText = document.querySelector('.footer-bottom p');
 if (footerText) {
     footerText.innerHTML = footerText.innerHTML.replace('2025', currentYear);
 }
+
+// Accordion functionality for registration section
+function toggleAccordion(accordionId) {
+    const content = document.getElementById(accordionId + '-content');
+    const icon = document.getElementById(accordionId + '-icon');
+    
+    if (content && icon) {
+        const isActive = content.classList.contains('active');
+        
+        if (isActive) {
+            content.classList.remove('active');
+            icon.classList.remove('rotated');
+        } else {
+            content.classList.add('active');
+            icon.classList.add('rotated');
+        }
+    }
+}
+
+// Make toggleAccordion available globally
+window.toggleAccordion = toggleAccordion;
+
+// Initialize accordion state on page load
+document.addEventListener('DOMContentLoaded', function() {
+    // Start with both accordions open by default
+    const offlineAccordion = document.getElementById('offline-content');
+    const offlineIcon = document.getElementById('offline-icon');
+    const onlineAccordion = document.getElementById('online-content');
+    const onlineIcon = document.getElementById('online-icon');
+    
+    if (offlineAccordion && offlineIcon) {
+        offlineAccordion.classList.add('active');
+        offlineIcon.classList.add('rotated');
+    }
+    
+    if (onlineAccordion && onlineIcon) {
+        onlineAccordion.classList.add('active');
+        onlineIcon.classList.add('rotated');
+    }
+});
