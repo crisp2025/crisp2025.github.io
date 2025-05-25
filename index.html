@@ -55,12 +55,8 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link has-dropdown">Committee</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#committee" class="dropdown-link">Organizing Committee</a></li>
-                            <li><a href="#committee-core" class="dropdown-link">Core Committee</a></li>
-                            <li><a href="#committee-advisory" class="dropdown-link">National Advisory Committee</a></li>
-                        </ul>
+                        <a href="#committee" class="nav-link">Committee</a>
+
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link has-dropdown">Contact</a>
@@ -314,46 +310,60 @@
     <!-- Committee Section -->
     <section id="committee" class="section">
         <div class="container">
-            <h2 class="section-title">Organizing Committee</h2>
+            <h2 class="section-title">Committee</h2>
 
-            <!-- Leadership -->
-            <div id="committee-leadership" class="committee-section">
-                <div class="committee-grid">
-                    <div class="committee-card">
-                        <img src="placeholder-person.jpg" alt="Prof. Sukumar Mishra" class="committee-photo">
-                        <h4>Prof. Sukumar Mishra</h4>
-                        <p class="role">Patron</p>
-                        <p class="affiliation">Director, IIT(ISM) Dhanbad</p>
+            <!-- Organizing Committee -->
+            <div id="committee-organizing" class="committee-section">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion('organizing-committee')">
+                        <h3 class="accordion-title">
+                            <i class="fas fa-users"></i>
+                            Organizing Committee
+                        </h3>
+                        <i class="fas fa-chevron-down accordion-icon" id="organizing-committee-icon"></i>
                     </div>
-                    <div class="committee-card">
-                        <img src="placeholder-person.jpg" alt="Prof. Dheeraj Kumar" class="committee-photo">
-                        <h4>Prof. Dheeraj Kumar</h4>
-                        <p class="role">Co-Patron</p>
-                        <p class="affiliation">Deputy Director, IIT(ISM) Dhanbad</p>
-                    </div>
-                    <div class="committee-card">
-                        <img src="placeholder-person.jpg" alt="Prof. Shravan Kumar" class="committee-photo">
-                        <h4>Prof. Shravan Kumar</h4>
-                        <p class="role">Chairperson</p>
-                        <p class="affiliation">HOD, FMME Department</p>
-                    </div>
-                </div>
-            </div>
+                    <div class="accordion-content" id="organizing-committee-content">
+                        <!-- Leadership -->
+                        <div class="committee-subsection">
+                            <div class="committee-grid">
+                                <div class="committee-card">
+                                    <img src="Sukumar-Mishra.jpg" alt="Prof. Sukumar Mishra" class="committee-photo">
+                                    <h4>Prof. Sukumar Mishra</h4>
+                                    <p class="role">Patron</p>
+                                    <p class="affiliation">Director, IIT(ISM) Dhanbad</p>
+                                </div>
+                                <div class="committee-card">
+                                    <img src="Dheeraj-Kumar.jpg" alt="Prof. Dheeraj Kumar" class="committee-photo">
+                                    <h4>Prof. Dheeraj Kumar</h4>
+                                    <p class="role">Co-Patron</p>
+                                    <p class="affiliation">Deputy Director, IIT(ISM) Dhanbad</p>
+                                </div>
+                                <div class="committee-card">
+                                    <img src="Shravan-Kumar.jpg" alt="Prof. Shravan Kumar" class="committee-photo">
+                                    <h4>Prof. Shravan Kumar</h4>
+                                    <p class="role">Chairperson</p>
+                                    <p class="affiliation">HOD, FMME Department</p>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- Convenors -->
-            <div id="committee-convenors" class="committee-section">
-                <div class="committee-grid">
-                    <div class="committee-card">
-                        <img src="placeholder-person.jpg" alt="Prof. Aarti Kumari" class="committee-photo">
-                        <h4>Prof. Aarti Kumari</h4>
-                        <p class="role">Convenor</p>
-                        <p class="affiliation">FMME Department</p>
-                    </div>
-                    <div class="committee-card">
-                        <img src="placeholder-person.jpg" alt="Prof. Vishnu Teja Mantripragada" class="committee-photo">
-                        <h4>Prof. Vishnu Teja Mantripragada</h4>
-                        <p class="role">Co-Convenor</p>
-                        <p class="affiliation">FMME Department</p>
+                        <!-- Convenors -->
+                        <div class="committee-subsection">
+                            <div class="committee-grid">
+                                <div class="committee-card">
+                                    <img src="Aarti-Kumari.png" alt="Prof. Aarti Kumari" class="committee-photo">
+                                    <h4>Prof. Aarti Kumari</h4>
+                                    <p class="role">Convenor</p>
+                                    <p class="affiliation">FMME Department</p>
+                                </div>
+                                <div class="committee-card">
+                                    <img src="Vishnu-Teja.jpg" alt="Prof. Vishnu Teja Mantripragada" class="committee-photo">
+                                    <h4>Prof. Vishnu Teja Mantripragada</h4>
+                                    <p class="role">Co-Convenor</p>
+                                    <p class="affiliation">FMME Department</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -430,10 +440,10 @@
             <div id="committee-advisory" class="committee-section">
                 <div class="accordion-item">
                     <div class="accordion-header" onclick="toggleAccordion('advisory-committee')">
-                        <h2 class="accordion-title">
+                        <h3 class="accordion-title">
                             <i class="fas fa-user-tie"></i>
                             National Advisory Committee
-                        </h2>
+                        </h3>
                         <i class="fas fa-chevron-down accordion-icon" id="advisory-committee-icon"></i>
                     </div>
                     <div class="accordion-content" id="advisory-committee-content">
