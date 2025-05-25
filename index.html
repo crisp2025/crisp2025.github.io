@@ -35,18 +35,23 @@
                         <a href="#speakers" class="nav-link">Speakers</a>
                     </li>
                     <li class="nav-item">
+                        <a href="#speakers" class="nav-link">Programme</a>
+                    </li>
+                    <li class="nav-item">
                         <a href="#" class="nav-link has-dropdown">Call for Abstracts</a>
                         <ul class="dropdown-menu">
+                            <li><a href="#themes" class="dropdown-link">Abstract Submission</a></li>
                             <li><a href="#themes-section" class="dropdown-link">Conference Themes</a></li>
-                            <li><a href="templates/CRISP2025-Abstract-Template.docx" class="dropdown-link"
-                                    download>Abstract Template</a></li>
-                            <li><a href="guidelines/CRISP2025-Submission-Guidelines.pdf" class="dropdown-link"
-                                    download>Submission Guidelines</a></li>
-                            <li><a href="#themes" class="dropdown-link">Submit Abstract</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#registration" class="nav-link">Registration</a>
+                        <a href="#" class="nav-link has-dropdown">Registration</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#registration" class="dropdown-link">Registration Details</a></li>
+                            <li><a href="#importantdates" class="dropdown-link">Important Dates</a></li>
+                            <li><a href="#travel" class="dropdown-link">How to Reach Us</a></li>
+                            <li><a href="#accommodation" class="dropdown-link">Accommodation</a></li>
+                        </ul>
 
                     </li>
                     <li class="nav-item">
@@ -223,27 +228,6 @@
             </div>
 
             <!-- Important Dates -->
-            <div class="important-dates">
-                <h4>Important Dates</h4>
-                <div class="dates-table">
-                    <div class="date-row">
-                        <div class="date-label">Abstract Submission Start Date</div>
-                        <div class="date-value">1st June, 2025</div>
-                    </div>
-                    <div class="date-row">
-                        <div class="date-label">Abstract Submission Ends</div>
-                        <div class="date-value">15th August, 2025</div>
-                    </div>
-                    <div class="date-row">
-                        <div class="date-label">Abstract Acceptance Notification</div>
-                        <div class="date-value">30th August, 2025</div>
-                    </div>
-                    <div class="date-row">
-                        <div class="date-label">Last Date of Registration</div>
-                        <div class="date-value">5th September, 2025</div>
-                    </div>
-                </div>
-            </div>  
         </div>
     </section>
 
@@ -255,14 +239,15 @@
             <!-- Abstract Submission Information -->
             <div class="abstract-submission-info">
                 <div class="submission-content">
-                    <p>CRISP-2025 invites abstracts from faculty, researchers, students and industry professionals for oral/poster presentation. The
+                    <p>CRISP-2025 invites abstracts from faculty, researchers, students and industry professionals for
+                        oral/poster presentation. The
                         submission of abstract should align with the conference themes, listed below.
                         Last date of abstract submission is <b>15th August
-                        2025.</b> The acceptance of abstract for oral or poster presentation will notified later.
-                        
+                            2025.</b> The acceptance of abstract for oral or poster presentation will notified later.
+
                     </p>
 
-                    
+
 
                     <div class="submission-contact">
                         <div class="contact-item">
@@ -270,10 +255,11 @@
                             <div>
                                 <h4>Submit Abstracts to:</h4>
                                 <p><strong>crisp2025@iitism.ac.in</strong></p>
-                                <p><em>The abstract template and the submission guidelines are available here: <a href="templates/CRISP2025-Abstract-Template.docx"
-                                    download="CRISP2025-Abstract-Template.docx">
-                                    Abstract Template
-                                </a></em></p>
+                                <p><em>The abstract template and the submission guidelines are available here: <a
+                                            href="templates/CRISP2025-Abstract-Template.docx"
+                                            download="CRISP2025-Abstract-Template.docx">
+                                            Abstract Template
+                                        </a></em></p>
                             </div>
                         </div>
                     </div>
@@ -714,7 +700,7 @@
             <h2 class="section-title">Registration</h2>
 
             <!-- Registration Button -->
-            <div class="registration-button-container">
+            <div class="registration-button-container abstract-submission-info">
                 <div class="registration-button-section">
                     <p>Click below to register. The bank account details for payment are provided in the same link.</p>
                     <a href="https://forms.google.com/your-form-link" target="_blank" rel="noopener noreferrer"
@@ -725,7 +711,11 @@
                     <br />
                     <small> *All prices include 18% GST</small>
                     <br />
-                    Last Date for Registration: 5th September 2025
+                    <br />
+                    <!-- Highlight the last date using inline styles -->
+                    <span class="highlight-text" style="color: red; font-weight: bold;">Last date of registration is
+                        <b>5th September, 2025</b>.</span>
+
                 </div>
             </div>
             <br />
@@ -819,19 +809,71 @@
                     </div>
                 </div>
 
-                <!-- Accommodation Section -->
-                <h2 class="about-subtitle">Accommodation</h2>
-                <div class="department-content">
-                    <p>Efforts shall be made to accommodate the participants inside the campus. Allocation of
-                        hostels (for student participants) and institute guest houses (for other participants) shall
-                        be done on a first-come, first-served basis and involve payment. Besides the campus, there
-                        are many hotels with accommodation in Dhanbad, which participants can book. Please write to <a
-                            href="mailto:crisp2025@iitism.ac.in">crisp2025@iitism.ac.in</a> after registration for
-                        accommodation
-                        arrangements.
-                    </p>
+                <div id="importantdates" class="important-dates">
+                    <h4 class="about-subtitle">Important Dates</h4>
+                    <div class="dates-table">
+                        <div class="date-row">
+                            <div class="date-label">Abstract Submission Start Date</div>
+                            <div class="date-value">1st June, 2025</div>
+                        </div>
+                        <div class="date-row">
+                            <div class="date-label">Abstract Submission Ends</div>
+                            <div class="date-value">15th August, 2025</div>
+                        </div>
+                        <div class="date-row">
+                            <div class="date-label">Abstract Acceptance Notification</div>
+                            <div class="date-value">30th August, 2025</div>
+                        </div>
+                        <div class="date-row">
+                            <div class="date-label">Last Date of Registration</div>
+                            <div class="date-value">5th September, 2025</div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Travel Section -->
+                <div id="travel">
+                    <h2 class="about-subtitle">How to Reach Us</h2>
+                    <div class="department-content travel-content">
+                        <div class="travel-method">
+                            <h4><i class="fas fa-train"></i> By Rail</h4>
+                            <p>IIT(ISM) Dhanbad is just 2.8 km from Dhanbad Railway Station, one of the busiest stations in the region with direct trains to major cities across India. Taxis, Ola cabs, autorickshaws, and e-rickshaws are easily available from the station to the campus.</p>
+                        </div>
+
+                        <div class="travel-method">
+                            <h4><i class="fas fa-road"></i> By Road</h4>
+                            <p>Dhanbad is well connected by National Highways 18 and 19, linking it to cities like Ranchi, Kolkata, Jamshedpur, and Bokaro. Regular bus services operate on these routes for convenient travel.</p>
+                        </div>
+
+                        <div class="travel-method">
+                            <h4><i class="fas fa-plane"></i> By Air</h4>
+                            <p>Nearby airports include:</p>
+                            <ul class="airport-list">
+                                <li>Kazi Nazrul Islam Airport, Durgapur – 85 km</li>
+                                <li>Deoghar Airport, Deoghar – 110 km</li>
+                                <li>Birsa Munda Airport, Ranchi – 140 km</li>
+                                <li>Netaji Subhas Chandra Bose Airport, Kolkata  – 269 km</li>
+                            </ul>
+                            <p>From these airports, taxis and buses are available to reach Dhanbad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="accommodation">
+                    <h2 class="about-subtitle">Accommodation</h2>
+                    <div class="department-content">
+                        <p>Efforts shall be made to accommodate the participants inside the campus. Allocation of
+                            hostels (for student participants) and institute guest houses (for other participants) shall
+                            be done on a first-come, first-served basis and involve payment. Besides the campus, there
+                            are many hotels with accommodation in Dhanbad, which participants can book. Please write to
+                            <a href="mailto:crisp2025@iitism.ac.in">crisp2025@iitism.ac.in</a> after registration for
+                            accommodation
+                            arrangements.
+                        </p>
+                    </div>
+                </div>
+                
             </div>
+
+
         </div>
     </section>
 
