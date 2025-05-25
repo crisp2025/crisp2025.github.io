@@ -569,32 +569,54 @@
         <div class="container">
             <h2 class="section-title">Registration</h2>
 
-            <!-- Pricing Information with Accordions -->
+            <!-- Registration Button -->
+            <div class="registration-button-container">
+                <div class="registration-button-section">
+                    <p>Click below to register. The bank account details for payment are provided in the same link.</p>
+                    <a href="https://forms.google.com/your-form-link" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary btn-large">
+                        <i class="fas fa-external-link-alt"></i>
+                        Register Now
+                    </a>
+                    <br />
+                    <small> *All prices include 18% GST</small>
+                </div>
+            </div>
+            <br />
+
+            <!-- Pricing Information - Direct Display -->
             <div class="pricing-container">
-                <div class="accordion-container">
-                    <!-- Offline Participation Accordion -->
-                    <div class="accordion-item">
-                        <div class="accordion-header" onclick="toggleAccordion('offline')">
-                            <h4 class="accordion-title">
-                                <i class="fas fa-users"></i>
-                                Offline Participation
-                            </h4>
-                            <i class="fas fa-chevron-down accordion-icon" id="offline-icon"></i>
+                <h2 class="about-subtitle">Registration Fees</h2>
+                
+                <!-- Offline Participation -->
+                <div class="participation-sections">
+                    <div>
+                        <h4 class="participation-title">
+                            <i class="fas fa-users"></i>
+                            Offline Participation
+                        </h4>
+                        <div class="pricing-grid-compact">
+                            <div class="pricing-card-compact offline-card">
+                                <h5>Students &  Scholars</h5>
+                                <div class="price-amount-compact">₹3,500</div>
+                            </div>
+                            <div class="pricing-card-compact offline-card">
+                                <h5>Post Docs</h5>
+                                <div class="price-amount-compact">₹7,000</div>
+                            </div>
+                            <div class="pricing-card-compact offline-card">
+                                <h5>Faculty & Scientists</h5>
+                                <div class="price-amount-compact">₹8,000</div>
+                            </div>
+                            <div class="pricing-card-compact offline-card">
+                                <h5>Industry Professionals</h5>
+                                <div class="price-amount-compact">₹12,000</div>
+                            </div>
                         </div>
-                        <div class="accordion-content" id="offline-content">
-                            <div class="pricing-grid-compact">
-                                <div class="pricing-card-compact offline-card">
-                                    <h5>Students & Research Scholars</h5>
-                                    <div class="price-amount-compact">₹3,500</div>
-                                </div>
-                                <div class="pricing-card-compact offline-card">
-                                    <h5>Faculty, Scientists & Post Docs</h5>
-                                    <div class="price-amount-compact">₹8,000</div>
-                                </div>
-                                <div class="pricing-card-compact offline-card">
-                                    <h5>Industry Professionals</h5>
-                                    <div class="price-amount-compact">₹12,000</div>
-                                </div>
+                        <div class="benefits-hover-container">
+                            <div class="benefits-hover-trigger">
+                                <i class="fas fa-info-circle"></i>
+                                <span>What's included?</span>
                             </div>
                             <div class="registration-benefits">
                                 <h6>Registration includes:</h6>
@@ -610,29 +632,34 @@
                         </div>
                     </div>
 
-                    <!-- Online Participation Accordion -->
-                    <div class="accordion-item">
-                        <div class="accordion-header" onclick="toggleAccordion('online')">
-                            <h4 class="accordion-title">
-                                <i class="fas fa-laptop"></i>
-                                Online Participation
-                            </h4>
-                            <i class="fas fa-chevron-down accordion-icon" id="online-icon"></i>
+                    <!-- Online Participation -->
+                    <div>
+                        <h4 class="participation-title">
+                            <i class="fas fa-laptop"></i>
+                            Online Participation
+                        </h4>
+                        <div class="pricing-grid-compact">
+                            <div class="pricing-card-compact online-card">
+                                <h5>Students & Scholars</h5>
+                                <div class="price-amount-compact">₹2,000</div>
+                            </div>
+                            <div class="pricing-card-compact online-card">
+                                <h5>Post Docs</h5>
+                                <div class="price-amount-compact">₹3,500</div>
+                            </div>
+                            <div class="pricing-card-compact online-card">
+                                <h5>Faculty & Scientists</h5>
+                                <div class="price-amount-compact">₹4,000</div>
+                            </div>
+                            <div class="pricing-card-compact online-card">
+                                <h5>Industry Professionals</h5>
+                                <div class="price-amount-compact">₹7,000</div>
+                            </div>
                         </div>
-                        <div class="accordion-content" id="online-content">
-                            <div class="pricing-grid-compact">
-                                <div class="pricing-card-compact online-card">
-                                    <h5>Students & Research Scholars</h5>
-                                    <div class="price-amount-compact">₹2,000</div>
-                                </div>
-                                <div class="pricing-card-compact online-card">
-                                    <h5>Faculty, Scientists & Post Docs</h5>
-                                    <div class="price-amount-compact">₹4,000</div>
-                                </div>
-                                <div class="pricing-card-compact online-card">
-                                    <h5>Industry Professionals</h5>
-                                    <div class="price-amount-compact">₹7,000</div>
-                                </div>
+                        <div class="benefits-hover-container">
+                            <div class="benefits-hover-trigger">
+                                <i class="fas fa-info-circle"></i>
+                                <span>What's included?</span>
                             </div>
                             <div class="registration-benefits">
                                 <h6>Registration includes:</h6>
@@ -645,22 +672,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Registration Button -->
-            <div class="registration-button-container">
-                <div class="registration-button-section">
-                    <h3>Ready to Register?</h3>
-                    <p>Click below to register
+                <!-- Accommodation Section -->
+                <h2 class="about-subtitle">Accommodation</h2>
+                <div class="department-content">
+                    <p>Efforts shall be made to accommodate the participants inside the campus. Allocation of
+                        hostels (for student participants) and institute guest houses (for other participants) shall
+                        be done on a first-come, first-served basis and involve payment. Besides the campus, there
+                        are many hotels with accommodation in Dhanbad, which participants can book. Please write to <a href="mailto:crisp2025@iitism.ac.in">crisp2025@iitism.ac.in</a> after registration for accommodation
+                        arrangements.
                     </p>
-                    <a href="https://forms.google.com/your-form-link" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary btn-large">
-                        <i class="fas fa-external-link-alt"></i>
-                        Register Now
-                    </a>
-                    <br />
-                    <small> *All prices include 18% GST</small>
-
                 </div>
             </div>
         </div>
@@ -675,13 +696,13 @@
                 <!-- Technical Partner Section -->
                 <div class="technical-partner-section">
                     <h3 class="sponsor-category-title">Technical Collaborator</h3>
-                    <div class="technical-partner-grid">
+                    <div class="technical-partner-grid"></div>
                         <img src="texmin-logo.png" alt="Texmin Logo" class="sponsor-logo">
                     </div>
                 </div>
 
                 <!-- Sponsors Section -->
-                <div class="sponsors-section">
+                <div class="sponsors-section"></div>
                     <h3 class="sponsor-category-title">Sponsors (TBA)</h3>
                     <!-- <div class="sponsors-grid">
                             <img src="placeholder-sponsor-logo.png" alt="Sponsor 1" class="sponsor-logo">
