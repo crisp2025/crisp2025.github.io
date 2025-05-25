@@ -1692,9 +1692,7 @@ h1, h2, h3, h4, h5, h6 {
 .registration-benefits {
     margin-top: 1.5rem;
     padding: 1.5rem;
-    background: linear-gradient(135deg, #f8fafc, #edf2f7);
     border-radius: 10px;
-    border: 1px solid #e2e8f0;
 }
 
 .registration-benefits h6 {
@@ -1923,7 +1921,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme="dark"] .registration-benefits {
-    background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
     border: 1px solid var(--border-light);
 }
 
@@ -4022,7 +4019,6 @@ border-color: var(--accent-primary);
 .registration-benefits {
     margin-top: 1.5rem;
     padding: 1.5rem;
-    background: linear-gradient(135deg, #f8fafc, #edf2f7);
     border-radius: 10px;
     border: 1px solid #e2e8f0;
 }
@@ -4253,7 +4249,6 @@ border-color: var(--accent-primary);
 }
 
 [data-theme="dark"] .registration-benefits {
-    background: linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary));
     border: 1px solid var(--border-light);
 }
 

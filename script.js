@@ -333,16 +333,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const onlineAccordion = document.getElementById('online-content');
     const onlineIcon = document.getElementById('online-icon');
     
-    // Keep registration accordions open by default
-    if (offlineAccordion && offlineIcon) {
-        offlineAccordion.classList.add('active');
-        offlineIcon.classList.add('rotated');
-    }
+    // // Keep registration accordions open by default
+    // if (offlineAccordion && offlineIcon) {
+    //     offlineAccordion.classList.add('active');
+    //     offlineIcon.classList.add('rotated');
+    // }
     
-    if (onlineAccordion && onlineIcon) {
-        onlineAccordion.classList.add('active');
-        onlineIcon.classList.add('rotated');
-    }
+    // if (onlineAccordion && onlineIcon) {
+    //     onlineAccordion.classList.add('active');
+    //     onlineIcon.classList.add('rotated');
+    // }
     
     // Initialize committee accordions as closed (default state)
     const coreCommitteeAccordion = document.getElementById('core-committee-content');
