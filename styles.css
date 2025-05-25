@@ -1941,3 +1941,207 @@ h1, h2, h3, h4, h5, h6 {
         border-top: 1px solid var(--border-light);
     }
 }
+
+/* Sponsorship Tiers Styles */
+.sponsorship-tiers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sponsorship-tier {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.sponsorship-tier::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--tier-color-1), var(--tier-color-2));
+}
+
+.sponsorship-tier:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Tier-specific colors */
+.diamond-tier {
+    --tier-color-1: #b9f2ff;
+    --tier-color-2: #00d4ff;
+    border-color: #00d4ff;
+}
+
+.platinum-tier {
+    --tier-color-1: #e5e5e5;
+    --tier-color-2: #c0c0c0;
+    border-color: #c0c0c0;
+}
+
+.gold-tier {
+    --tier-color-1: #ffd700;
+    --tier-color-2: #ffb300;
+    border-color: #ffb300;
+}
+
+.silver-tier {
+    --tier-color-1: #c0c0c0;
+    --tier-color-2: #a8a8a8;
+    border-color: #a8a8a8;
+}
+
+.tier-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.tier-header h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tier-header h4 i {
+    font-size: 1.8rem;
+}
+
+.diamond-tier .tier-header h4 {
+    color: #00d4ff;
+}
+
+.platinum-tier .tier-header h4 {
+    color: #888;
+}
+
+.gold-tier .tier-header h4 {
+    color: #ffb300;
+}
+
+.silver-tier .tier-header h4 {
+    color: #888;
+}
+
+.tier-amount {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--tier-color-1), var(--tier-color-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.tier-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tier-benefits li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.tier-benefits li i {
+    color: #28a745;
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.tier-benefits li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments for sponsorship tiers */
+@media (max-width: 1024px) {
+    .sponsorship-tiers {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sponsorship-tiers {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+    
+    .sponsorship-tier {
+        padding: 1.5rem;
+    }
+    
+    .tier-header h4 {
+        font-size: 1.3rem;
+    }
+    
+    .tier-amount {
+        font-size: 1.1rem;
+    }
+    
+    .tier-benefits li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Dark mode adjustments for sponsorship tiers */
+[data-theme="dark"] .sponsorship-tier {
+    background: var(--card-bg);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .tier-header {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .tier-amount {
+    color: var(--text-color);
+}
+
+/* Enhanced hover effects for each tier */
+.diamond-tier:hover {
+    border-color: #00d4ff;
+    box-shadow: 0 12px 35px rgba(0, 212, 255, 0.2);
+}
+
+.platinum-tier:hover {
+    border-color: #c0c0c0;
+    box-shadow: 0 12px 35px rgba(192, 192, 192, 0.2);
+}
+
+.gold-tier:hover {
+    border-color: #ffb300;
+    box-shadow: 0 12px 35px rgba(255, 179, 0, 0.2);
+}
+
+.silver-tier:hover {
+    border-color: #a8a8a8;
+    box-shadow: 0 12px 35px rgba(168, 168, 168, 0.2);
+}
