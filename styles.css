@@ -1037,7 +1037,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Accordion Styles */
 .accordion-container {
-    max-width: 800px;
     margin: 0 auto 3rem;
 }
 
@@ -1096,7 +1095,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .accordion-content.active {
-    max-height: 1500px; /* Significantly increased from 800px to accommodate long content */
+    max-height: 100%; /* Significantly increased from 800px to accommodate long content */
 }
 
 /* Compact Pricing Styles */
