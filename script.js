@@ -7,11 +7,45 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
-document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    navMenu.classList.remove('active');
+// Close mobile menu when clicking on a link (except parent nav-links with dropdowns)
+document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', (e) => {
+    // Don't close menu if it's a parent nav-link with dropdown
+    if (!n.classList.contains('has-dropdown')) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
 }));
+
+// Prevent default click behavior for parent nav-links with dropdowns
+document.querySelectorAll('.nav-link.has-dropdown').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // Toggle dropdown visibility on mobile
+        const parentItem = link.closest('.nav-item');
+        if (parentItem) {
+            // Toggle active class on the parent nav-item (for CSS compatibility)
+            parentItem.classList.toggle('active');
+            
+            // Close other dropdowns
+            document.querySelectorAll('.nav-item').forEach(otherItem => {
+                if (otherItem !== parentItem && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                }
+            });
+        }
+    });
+});
+
+// Close dropdowns when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav-item')) {
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+        });
+    }
+});
 
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

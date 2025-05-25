@@ -20,14 +20,55 @@
                     <span class="brand-text">CRISP 2025</span>
                 </div>
                 <ul class="nav-menu">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#themes" class="nav-link">Call for Abstracts</a></li>
-                    <li class="nav-item"><a href="#committee" class="nav-link">Committee</a></li>
-                    <li class="nav-item"><a href="#registration" class="nav-link">Registration</a></li>
-                    <li class="nav-item"><a href="#submission" class="nav-link">Submission</a></li>
-                    <li class="nav-item"><a href="#sponsors" class="nav-link">Sponsors</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#about" class="dropdown-link">CRISP 2025</a></li>
+                            <li><a href="#about-fmme" class="dropdown-link">Department of FMME</a></li>
+                            <li><a href="#about-institute" class="dropdown-link">IIT (ISM) Dhanbad</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#speakers" class="nav-link">Speakers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown">Call for Abstracts</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#themes-section" class="dropdown-link">Conference Themes</a></li>
+                            <li><a href="templates/CRISP2025-Abstract-Template.docx" class="dropdown-link" download>Abstract Template</a></li>
+                            <li><a href="guidelines/CRISP2025-Submission-Guidelines.pdf" class="dropdown-link" download>Submission Guidelines</a></li>
+                            <li><a href="#themes" class="dropdown-link">Submit Abstract</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#registration" class="nav-link">Registration</a>
+                
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown">Sponsors</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#sponsors" class="dropdown-link">Sponsors & Collaborators</a></li>
+                            <li><a href="#sponsors-becomeone" class="dropdown-link">Become a Sponsor</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown">Committee</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#committee" class="dropdown-link">Organizing Committee</a></li>
+                            <li><a href="#committee-core" class="dropdown-link">Core Committee</a></li>
+                            <li><a href="#committee-advisory" class="dropdown-link">National Advisory Committee</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown">Contact</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#contact" class="dropdown-link">Contact Information</a></li>
+                            <li><a href="#contact" class="dropdown-link">Venue Details</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <div class="nav-controls">
                     <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
@@ -75,7 +116,7 @@
                         download="CRISP2025-Technical-Schedule.pdf">
                         <i class="fas fa-download"></i> Schedule
                     </a>
-                    <a href="#submission" class="btn btn-primary">Submit Abstract</a>
+<a href="#themes" class="btn btn-primary">Submit Abstract</a>
                 </div>
             </div>
         </div>
@@ -125,7 +166,7 @@
             </div>
 
             <!-- Department Information -->
-            <div class="about-department">
+            <div id="about-fmme" class="about-department">
                 <div class="department-header-row">
                     <div class="department-title-left">
                         <h3 class="about-subtitle">Department of Fuel, Minerals and Metallurgical Engineering</h3>
@@ -154,7 +195,7 @@
             </div>
 
             <!-- Institute Information -->
-            <div class="about-institute">
+            <div id="about-institute" class="about-institute">
                 <div class="institute-header-row">
 
                     <div class="institute-title-right">
@@ -188,51 +229,83 @@
     <section id="themes" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Call for Abstracts</h2>
-            <div class="themes-grid">
-                <div class="theme-card">
-                    <i class="fas fa-search theme-icon"></i>
-                    <h3>Identification & Exploration</h3>
-                    <p>Identification, exploration and characterization of critical minerals</p>
+            
+            <!-- Abstract Submission Information -->
+            <div class="abstract-submission-info">
+                <div class="submission-content">
+                    <p>We invite researchers, academicians, industry professionals, and students to submit abstracts on various themes related to critical metals. Your contributions will help advance the field and foster collaboration among experts.</p>
+                    
+                    <div class="submission-links">
+                        <a href="templates/CRISP2025-Abstract-Template.docx" class="btn btn-secondary" download="CRISP2025-Abstract-Template.docx">
+                            <i class="fas fa-download"></i> Abstract Template
+                        </a>
+                        <a href="guidelines/CRISP2025-Submission-Guidelines.pdf" class="btn btn-secondary" download="CRISP2025-Submission-Guidelines.pdf">
+                            <i class="fas fa-file-alt"></i> Submission Guidelines
+                        </a>
+                    </div>
+                    
+                    <div class="submission-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Submit Abstracts to:</h4>
+                                <p><strong>abstracts@crisp2025.org</strong></p>
+                                <p><em>Please follow the template format and submission guidelines</em></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="theme-card">
-                    <i class="fas fa-cogs theme-icon"></i>
-                    <h3>Innovation in Extraction</h3>
-                    <p>Innovation in Critical Metals Extraction from primary & secondary Resources</p>
-                </div>
-                <div class="theme-card">
-                    <i class="fas fa-flask theme-icon"></i>
-                    <h3>Advanced Techniques</h3>
-                    <p>Advanced hydrometallurgical techniques for Separation and Purification</p>
-                </div>
-                <div class="theme-card">
-                    <i class="fas fa-recycle theme-icon"></i>
-                    <h3>Sustainable Recycling</h3>
-                    <p>Sustainable Practices in Critical Metals Recycling</p>
-                </div>
-                <div class="theme-card">
-                    <i class="fas fa-plus-circle theme-icon"></i>
-                    <h3>Value Addition</h3>
-                    <p>Value addition and alloy development</p>
-                </div>
-                <div class="theme-card">
-                    <i class="fas fa-robot theme-icon"></i>
-                    <h3>AI & Automation</h3>
-                    <p>Role of AI and Automation in Critical Metals exploration and extraction</p>
-                </div>
-                <div class="theme-card">
-                    <i class="fas fa-leaf theme-icon"></i>
-                    <h3>Environmental Impact</h3>
-                    <p>Environmental Impact and Lifecycle Analysis</p>
-                </div>
-                <div class="theme-card">
-                    <i class="fas fa-balance-scale theme-icon"></i>
-                    <h3>Policy Framework</h3>
-                    <p>Policy and Regulatory Framework for Sustainable Critical Metals</p>
-                </div>
-                <div class="theme-card">
-                    <i class="fas fa-chart-line theme-icon"></i>
-                    <h3>Future Trends</h3>
-                    <p>Future Trends and Opportunities in Critical Metals</p>
+            </div>
+
+            <!-- Conference Themes -->
+            <div id="themes-section" class="themes-section">
+                <h3 class="themes-subtitle">Conference Themes</h3>
+                <div class="themes-grid">
+                    <div class="theme-card">
+                        <i class="fas fa-search theme-icon"></i>
+                        <h3>Identification & Exploration</h3>
+                        <p>Identification, exploration and characterization of critical minerals</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-cogs theme-icon"></i>
+                        <h3>Innovation in Extraction</h3>
+                        <p>Innovation in Critical Metals Extraction from primary & secondary Resources</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-flask theme-icon"></i>
+                        <h3>Advanced Techniques</h3>
+                        <p>Advanced hydrometallurgical techniques for Separation and Purification</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-recycle theme-icon"></i>
+                        <h3>Sustainable Recycling</h3>
+                        <p>Sustainable Practices in Critical Metals Recycling</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-plus-circle theme-icon"></i>
+                        <h3>Value Addition</h3>
+                        <p>Value addition and alloy development</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-robot theme-icon"></i>
+                        <h3>AI & Automation</h3>
+                        <p>Role of AI and Automation in Critical Metals exploration and extraction</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-leaf theme-icon"></i>
+                        <h3>Environmental Impact</h3>
+                        <p>Environmental Impact and Lifecycle Analysis</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-balance-scale theme-icon"></i>
+                        <h3>Policy Framework</h3>
+                        <p>Policy and Regulatory Framework for Sustainable Critical Metals</p>
+                    </div>
+                    <div class="theme-card">
+                        <i class="fas fa-chart-line theme-icon"></i>
+                        <h3>Future Trends</h3>
+                        <p>Future Trends and Opportunities in Critical Metals</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -244,8 +317,7 @@
             <h2 class="section-title">Organizing Committee</h2>
 
             <!-- Leadership -->
-            <div class="committee-section">
-                <h3 class="committee-subtitle">Leadership</h3>
+            <div id="committee-leadership" class="committee-section">
                 <div class="committee-grid">
                     <div class="committee-card">
                         <img src="placeholder-person.jpg" alt="Prof. Sukumar Mishra" class="committee-photo">
@@ -269,8 +341,7 @@
             </div>
 
             <!-- Convenors -->
-            <div class="committee-section">
-                <h3 class="committee-subtitle">Convenors</h3>
+            <div id="committee-convenors" class="committee-section">
                 <div class="committee-grid">
                     <div class="committee-card">
                         <img src="placeholder-person.jpg" alt="Prof. Aarti Kumari" class="committee-photo">
@@ -281,14 +352,14 @@
                     <div class="committee-card">
                         <img src="placeholder-person.jpg" alt="Prof. Vishnu Teja Mantripragada" class="committee-photo">
                         <h4>Prof. Vishnu Teja Mantripragada</h4>
-                        <p class="role">Convenor</p>
+                        <p class="role">Co-Convenor</p>
                         <p class="affiliation">FMME Department</p>
                     </div>
                 </div>
             </div>
 
             <!-- Core Committee -->
-            <div class="committee-section">
+            <div id="committee-core" class="committee-section">
                 <h3 class="committee-subtitle">Core Committee</h3>
                 <div class="advisory-list">
                     <div class="advisory-item">
@@ -346,8 +417,8 @@
             </div>
 
             <!-- National Advisory Committee -->
-            <div class="committee-section">
-                <h3 class="committee-subtitle">National Advisory Committee</h3>
+            <div id="committee-advisory" class="committee-section">
+                <h2 class="section-title">National Advisory Committee</h2>
                 <div class="advisory-list">
                     <div class="advisory-item">
                         <strong>Dr. D. Singh</strong> - Former CMD, IREL
@@ -386,49 +457,49 @@
                         <strong>Prof. Nikkam Suresh</strong> - Professor, IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. S. Bhattacharya</strong> - Former Professor, IIT(ISM), Dhanbad
+                        <strong>Prof. S. Bhattacharya</strong> - Former Professor, IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Sagar Pal</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Sagar Pal</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. M. K. Singh</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. M. K. Singh</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Sarat Kumar Das</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Sarat Kumar Das</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Amit Rai Dixit</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Amit Rai Dixit</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Alok Kumar Das</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Alok Kumar Das</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. S. K. Gupta</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. S. K. Gupta</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. R. M. Bhattacharjee</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. R. M. Bhattacharjee</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Rajni Singh</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Rajni Singh</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Sahendra Singh</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Sahendra Singh</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof Shushanta Sarangi</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof Shushanta Sarangi</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Dr Devi Prasad Mishra</strong> - IIT(ISM), Dhanbad
+                        <strong>Dr Devi Prasad Mishra</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Aditya Kumar</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Aditya Kumar</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof. Alok Sinha</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof. Alok Sinha</strong> - IIT(ISM) Dhanbad
                     </div>
                     <div class="advisory-item">
-                        <strong>Prof Somnath Chattopadhyaya</strong> - IIT(ISM), Dhanbad
+                        <strong>Prof Somnath Chattopadhyaya</strong> - IIT(ISM) Dhanbad
                     </div>
                 </div>
             </div>
@@ -537,74 +608,6 @@
         </div>
     </section>
 
-    <!-- Submission Section -->
-    <section id="submission" class="section">
-        <div class="container">
-            <h2 class="section-title">Abstract & Paper Submission</h2>
-            <div class="submission-content">
-                <div class="submission-info">
-                    <h3>Submission Guidelines</h3>
-                    <ul class="guidelines-list">
-                        <li>Abstracts should be 300-500 words</li>
-                        <li>Full papers should be 6-8 pages maximum</li>
-                        <li>Use the provided template for formatting</li>
-                        <li>Submissions must be original and unpublished</li>
-                        <li>All submissions will be peer-reviewed</li>
-                    </ul>
-                    <div class="important-dates">
-                        <h4>Important Dates</h4>
-                        <div class="date-item">
-                            <strong>Abstract Submission Deadline:</strong> [TBA]
-                        </div>
-                        <div class="date-item">
-                            <strong>Notification of Acceptance:</strong> [TBA]
-                        </div>
-                        <div class="date-item">
-                            <strong>Full Paper Submission:</strong> [TBA]
-                        </div>
-                    </div>
-                </div>
-                <div class="submission-form">
-                    <h3>Submit Your Work</h3>
-                    <form class="submit-form">
-                        <div class="form-group">
-                            <label for="authorName">Primary Author Name *</label>
-                            <input type="text" id="authorName" name="authorName" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="authorEmail">Author Email *</label>
-                            <input type="email" id="authorEmail" name="authorEmail" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="paperTitle">Paper/Abstract Title *</label>
-                            <input type="text" id="paperTitle" name="paperTitle" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="theme">Related Theme *</label>
-                            <select id="theme" name="theme" required>
-                                <option value="">Select Theme</option>
-                                <option value="identification">Identification & Exploration</option>
-                                <option value="extraction">Innovation in Extraction</option>
-                                <option value="techniques">Advanced Techniques</option>
-                                <option value="recycling">Sustainable Recycling</option>
-                                <option value="value">Value Addition</option>
-                                <option value="ai">AI & Automation</option>
-                                <option value="environment">Environmental Impact</option>
-                                <option value="policy">Policy Framework</option>
-                                <option value="trends">Future Trends</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="fileUpload">Upload File (PDF/Word) *</label>
-                            <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit Abstract/Paper</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Sponsors Section -->
     <section id="sponsors" class="section bg-light">
         <div class="container">
@@ -629,7 +632,7 @@
                     </div> -->
                 </div>
 
-                <div class="sponsorship-info">
+                <div id="sponsors-becomeone" class="sponsorship-info">
                     <h3>Become a Sponsor</h3>
                     <p>Join us as a sponsor and connect with leading professionals in critical metals technology.
                         Various sponsorship packages available.</p>
@@ -746,7 +749,6 @@
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#registration">Registration</a></li>
-                        <li><a href="#submission">Submission</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
