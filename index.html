@@ -32,23 +32,22 @@
                         </ul>
                     </li>
                     <li class="nav-item">
+                        <a href="#" class="nav-link has-dropdown">Programme</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#themes-section" class="dropdown-link">Conference Themes</a></li>
+                            <li><a href="#importantdates" class="dropdown-link">Important Dates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
                         <a href="#speakers" class="nav-link">Speakers</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#speakers" class="nav-link">Programme</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link has-dropdown">Call for Abstracts</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#themes" class="dropdown-link">Abstract Submission</a></li>
-                            <li><a href="#themes-section" class="dropdown-link">Conference Themes</a></li>
-                        </ul>
+                        <a href="#themes" class="nav-link">Call for Abstracts</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link has-dropdown">Registration</a>
                         <ul class="dropdown-menu">
                             <li><a href="#registration" class="dropdown-link">Registration Details</a></li>
-                            <li><a href="#importantdates" class="dropdown-link">Important Dates</a></li>
                             <li><a href="#travel" class="dropdown-link">How to Reach Us</a></li>
                             <li><a href="#accommodation" class="dropdown-link">Accommodation</a></li>
                         </ul>
@@ -63,14 +62,13 @@
                     </li>
                     <li class="nav-item">
                         <a href="#committee" class="nav-link">Committee</a>
-
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link has-dropdown">Contact</a>
-                        <ul class="dropdown-menu">
+                        <a href="#contact" class="nav-link has-dropdown">Contact</a>
+                        <!-- <ul class="dropdown-menu">
                             <li><a href="#contact" class="dropdown-link">Contact Information</a></li>
                             <li><a href="#contact" class="dropdown-link">Venue Details</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                 </ul>
                 <div class="nav-controls">
@@ -126,7 +124,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section bg-light">
         <div class="container">
             <h2 class="section-title">About CRISP 2025</h2>
             <div class="about-content">
@@ -232,42 +230,9 @@
     </section>
 
     <!-- Conference Themes -->
-    <section id="themes" class="section bg-light">
+    <section id="themes-section" class="section bg-light">
         <div class="container">
-            <h2 class="section-title">Call for Abstracts</h2>
-
-            <!-- Abstract Submission Information -->
-            <div class="abstract-submission-info">
-                <div class="submission-content">
-                    <p>CRISP-2025 invites abstracts from faculty, researchers, students and industry professionals for
-                        oral/poster presentation. The
-                        submission of abstract should align with the conference themes, listed below.
-                        Last date of abstract submission is <b>15th August
-                            2025.</b> The acceptance of abstract for oral or poster presentation will notified later.
-
-                    </p>
-
-
-
-                    <div class="submission-contact">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Submit Abstracts to:</h4>
-                                <p><strong>crisp2025@iitism.ac.in</strong></p>
-                                <p><em>The abstract template and the submission guidelines are available here: <a
-                                            href="templates/CRISP2025-Abstract-Template.docx"
-                                            download="CRISP2025-Abstract-Template.docx">
-                                            Abstract Template
-                                        </a></em></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Conference Themes -->
-            <div id="themes-section" class="themes-section">
+            <div class="themes-section">
                 <h3 class="themes-subtitle">Conference Themes</h3>
                 <div class="themes-grid">
                     <div class="theme-card">
@@ -319,9 +284,33 @@
             </div>
         </div>
     </section>
-
+    <section id="importantdates" class="section bg-light">
+        <h4 class="section-title">Important Dates</h4>
+        <div class="container">
+            <div class="important-dates">
+                <div class="dates-table">
+                    <div class="date-row">
+                        <div class="date-label">Abstract Submission Start Date</div>
+                        <div class="date-value">1st June, 2025</div>
+                    </div>
+                    <div class="date-row">
+                        <div class="date-label">Abstract Submission Ends</div>
+                        <div class="date-value">15th August, 2025</div>
+                    </div>
+                    <div class="date-row">
+                        <div class="date-label">Abstract Acceptance Notification</div>
+                        <div class="date-value">30th August, 2025</div>
+                    </div>
+                    <div class="date-row">
+                        <div class="date-label">Last Date of Registration</div>
+                        <div class="date-value">5th September, 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Speakers Section -->
-    <section id="speakers" class="section">
+    <section id="speakers" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Speakers</h2>
 
@@ -444,8 +433,309 @@
         </div>
     </section>
 
+    <section id="themes" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Call for Abstracts</h2>
+
+            <!-- Abstract Submission Information -->
+            <div class="abstract-submission-info">
+                <div class="submission-content">
+                    <p>CRISP-2025 invites abstracts from faculty, researchers, students and industry professionals for
+                        oral/poster presentation. The
+                        submission of abstract should align with the conference themes, listed below.
+                        Last date of abstract submission is <b>15th August
+                            2025.</b> The acceptance of abstract for oral or poster presentation will notified later.
+
+                    </p>
+
+
+
+                    <div class="submission-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Submit Abstracts to:</h4>
+                                <p><strong>crisp2025@iitism.ac.in</strong></p>
+                                <p><em>The abstract template and the submission guidelines are available here: <a
+                                            href="templates/CRISP2025-Abstract-Template.docx"
+                                            download="CRISP2025-Abstract-Template.docx">
+                                            Abstract Template
+                                        </a></em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Registration</h2>
+
+            <!-- Registration Button -->
+            <div class="registration-button-container abstract-submission-info">
+                <div class="registration-button-section">
+                    <p>Click below to register. The bank account details for payment are provided in the same link.</p>
+                    <a href="https://forms.google.com/your-form-link" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-primary btn-large">
+                        <i class="fas fa-external-link-alt"></i>
+                        Register Now
+                    </a>
+                    <br />
+                    <small> *All prices include 18% GST</small>
+                    <br />
+                    <br />
+                    <!-- Highlight the last date using inline styles -->
+                    <span class="highlight-text" style="color: red; font-weight: bold;">Last date of registration is
+                        <b>5th September, 2025</b>.</span>
+
+                </div>
+            </div>
+            <br />
+
+            <!-- Pricing Information - Direct Display -->
+            <div class="pricing-container ">
+                <h2 class="section-title">Registration Fees</h2>
+                <div class="abstract-submission-info">
+                    <!-- Offline Participation -->
+                    <div class="participation-sections">
+                        <div>
+                            <h4 class="participation-title">
+                                <i class="fas fa-users"></i>
+                                Offline Participation
+                            </h4>
+                            <div class="pricing-grid-compact">
+                                <div class="pricing-card-compact offline-card">
+                                    <h5>Students & Scholars</h5>
+                                    <div class="price-amount-compact">₹3,500</div>
+                                </div>
+                                <div class="pricing-card-compact offline-card">
+                                    <h5>Post Docs</h5>
+                                    <div class="price-amount-compact">₹7,000</div>
+                                </div>
+                                <div class="pricing-card-compact offline-card">
+                                    <h5>Faculty & Scientists</h5>
+                                    <div class="price-amount-compact">₹8,000</div>
+                                </div>
+                                <div class="pricing-card-compact offline-card">
+                                    <h5>Industry Professionals</h5>
+                                    <div class="price-amount-compact">₹12,000</div>
+                                </div>
+                            </div>
+                            <div class="benefits-hover-container">
+                                <div class="benefits-hover-trigger">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>What's included?</span>
+                                </div>
+                                <div class="registration-benefits">
+                                    <h6>Registration includes:</h6>
+                                    <ul class="benefits-list">
+                                        <li><i class="fas fa-check"></i> Access to all lectures</li>
+                                        <li><i class="fas fa-check"></i> Book of Abstracts</li>
+                                        <li><i class="fas fa-check"></i> Registration kit</li>
+                                        <li><i class="fas fa-check"></i> Souvenir</li>
+                                        <li><i class="fas fa-check"></i> Breakfast, Lunch & Gala Dinner</li>
+                                        <li><i class="fas fa-check"></i> Participation Certificate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Online Participation -->
+                        <div>
+                            <h4 class="participation-title">
+                                <i class="fas fa-laptop"></i>
+                                Online Participation
+                            </h4>
+                            <div class="pricing-grid-compact">
+                                <div class="pricing-card-compact online-card">
+                                    <h5>Students & Scholars</h5>
+                                    <div class="price-amount-compact">₹2,000</div>
+                                </div>
+                                <div class="pricing-card-compact online-card">
+                                    <h5>Post Docs</h5>
+                                    <div class="price-amount-compact">₹3,500</div>
+                                </div>
+                                <div class="pricing-card-compact online-card">
+                                    <h5>Faculty & Scientists</h5>
+                                    <div class="price-amount-compact">₹4,000</div>
+                                </div>
+                                <div class="pricing-card-compact online-card">
+                                    <h5>Industry Professionals</h5>
+                                    <div class="price-amount-compact">₹7,000</div>
+                                </div>
+                            </div>
+                            <div class="benefits-hover-container">
+                                <div class="benefits-hover-trigger">
+                                    <i class="fas fa-info-circle"></i>
+                                    <span>What's included?</span>
+                                </div>
+                                <div class="registration-benefits">
+                                    <h6>Registration includes:</h6>
+                                    <ul class="benefits-list">
+                                        <li><i class="fas fa-check"></i> Registration kit</li>
+                                        <li><i class="fas fa-check"></i> Book of Abstracts</li>
+                                        <li><i class="fas fa-check"></i> Participation Certificate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travel Section -->
+                <div id="travel">
+                    <h2 class="section-title">How to Reach Us</h2>
+                    <div class="department-content travel-content">
+                        <div class="travel-method">
+                            <h4><i class="fas fa-train"></i> By Rail</h4>
+                            <p>IIT(ISM) Dhanbad is just 2.8 km from Dhanbad Railway Station, one of the busiest stations
+                                in the region with direct trains to major cities across India. Taxis, Ola cabs,
+                                autorickshaws, and e-rickshaws are easily available from the station to the campus.</p>
+                        </div>
+
+                        <div class="travel-method">
+                            <h4><i class="fas fa-road"></i> By Road</h4>
+                            <p>Dhanbad is well connected by National Highways 18 and 19, linking it to cities like
+                                Ranchi, Kolkata, Jamshedpur, and Bokaro. Regular bus services operate on these routes
+                                for convenient travel.</p>
+                        </div>
+
+                        <div class="travel-method">
+                            <h4><i class="fas fa-plane"></i> By Air</h4>
+                            <p>Nearby airports include:</p>
+                            <ul class="airport-list">
+                                <li>Kazi Nazrul Islam Airport, Durgapur – 85 km</li>
+                                <li>Deoghar Airport, Deoghar – 110 km</li>
+                                <li>Birsa Munda Airport, Ranchi – 140 km</li>
+                                <li>Netaji Subhas Chandra Bose Airport, Kolkata – 269 km</li>
+                            </ul>
+                            <p>From these airports, taxis and buses are available to reach Dhanbad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="accommodation">
+                    <h2 class="section-title">Accommodation</h2>
+                    <div class="department-content">
+                        <p>Efforts shall be made to accommodate the participants inside the campus. Allocation of
+                            hostels (for student participants) and institute guest houses (for other participants) shall
+                            be done on a first-come, first-served basis and involve payment. Besides the campus, there
+                            are many hotels with accommodation in Dhanbad, which participants can book. Please write to
+                            <a href="mailto:crisp2025@iitism.ac.in">crisp2025@iitism.ac.in</a> after registration for
+                            accommodation
+                            arrangements.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Sponsors & Collaborators</h2>
+            <div class="sponsors-content">
+
+                <!-- Technical Partner Section -->
+                <div class="technical-partner-section">
+                    <h3 class="sponsor-category-title">Technical Collaborator</h3>
+                    <div class="technical-partner-grid"></div>
+                    <img src="texmin-logo.png" alt="Texmin Logo" class="sponsor-logo">
+                </div>
+            </div>
+
+            <!-- Sponsors Section -->
+            <div class="sponsors-section"></div>
+            <h3 class="sponsor-category-title">Sponsors (TBA)</h3>
+            <div class="sponsors-grid">
+                <img src="placeholder-sponsor-logo.png" alt="Sponsor 1" class="sponsor-logo">
+                <img src="placeholder-sponsor-logo.png" alt="Sponsor 2" class="sponsor-logo">
+                <img src="placeholder-sponsor-logo.png" alt="Sponsor 3" class="sponsor-logo">
+            </div>
+        </div>
+
+        <h3 class="section-title">Become a Sponsor</h3>
+        <div id="sponsors-becomeone" class="sponsorship-info">
+            <p>Join us as a sponsor and connect with leading professionals in critical metals technology.
+                Various sponsorship packages available.</p>
+
+            <!-- Sponsorship Tiers -->
+            <div class="sponsorship-tiers">
+                <!-- Diamond Sponsorship -->
+                <div class="sponsorship-tier diamond-tier">
+                    <div class="tier-header">
+                        <h4><i class="fas fa-gem"></i> DIAMOND</h4>
+                        <div class="tier-amount">Minimum INR 3 LAKHS</div>
+                    </div>
+                    <ul class="tier-benefits">
+                        <li><i class="fas fa-check"></i> Complimentary registration for 4 participants</li>
+                        <li><i class="fas fa-check"></i> One stall</li>
+                        <li><i class="fas fa-check"></i> Name & logo on conference website, conference booklet,
+                            banners, participant certificate</li>
+                        <li><i class="fas fa-check"></i> Inside full page for message in conference booklet</li>
+                        <li><i class="fas fa-check"></i> Name and logo in banners</li>
+                    </ul>
+                </div>
+
+                <!-- Platinum Sponsorship -->
+                <div class="sponsorship-tier platinum-tier">
+                    <div class="tier-header">
+                        <h4><i class="fas fa-medal"></i> PLATINUM</h4>
+                        <div class="tier-amount">Minimum INR 2 LAKHS</div>
+                    </div>
+                    <ul class="tier-benefits">
+                        <li><i class="fas fa-check"></i> Complimentary registration for 3 participants</li>
+                        <li><i class="fas fa-check"></i> One stall</li>
+                        <li><i class="fas fa-check"></i> Name & logo on conference website, conference booklet,
+                            banners, participant certificate</li>
+                        <li><i class="fas fa-check"></i> Inside half page for message in conference booklet</li>
+                        <li><i class="fas fa-check"></i> Name and logo in banners</li>
+                    </ul>
+                </div>
+
+                <!-- Gold Sponsorship -->
+                <div class="sponsorship-tier gold-tier">
+                    <div class="tier-header">
+                        <h4><i class="fas fa-trophy"></i> GOLD</h4>
+                        <div class="tier-amount">Minimum INR 1 LAKH</div>
+                    </div>
+                    <ul class="tier-benefits">
+                        <li><i class="fas fa-check"></i> Complimentary registration for 2 participants</li>
+                        <li><i class="fas fa-check"></i> One stall</li>
+                        <li><i class="fas fa-check"></i> Name & logo on conference website and banners</li>
+                        <li><i class="fas fa-check"></i> Name and logo in conference booklet-sponsors list</li>
+                    </ul>
+                </div>
+
+                <!-- Silver Sponsorship -->
+                <div class="sponsorship-tier silver-tier">
+                    <div class="tier-header">
+                        <h4><i class="fas fa-star"></i> SILVER</h4>
+                        <div class="tier-amount">Minimum INR 50,000/-</div>
+                    </div>
+                    <ul class="tier-benefits">
+                        <li><i class="fas fa-check"></i> Complimentary registration for 1 participant</li>
+                        <li><i class="fas fa-check"></i> One stand for poster</li>
+                        <li><i class="fas fa-check"></i> Name & logo on conference website</li>
+                        <li><i class="fas fa-check"></i> Name and logo in conference booklet-sponsors list</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary">Contact for Sponsorship</a>
+        </div>
+        </div>
+        </div>
+    </section>
+
     <!-- Committee Section -->
-    <section id="committee" class="section">
+    <section id="committee" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Committee</h2>
 
@@ -693,290 +983,8 @@
             </div>
         </div>
     </section>
-
-    <!-- Registration Section -->
-    <section id="registration" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Registration</h2>
-
-            <!-- Registration Button -->
-            <div class="registration-button-container abstract-submission-info">
-                <div class="registration-button-section">
-                    <p>Click below to register. The bank account details for payment are provided in the same link.</p>
-                    <a href="https://forms.google.com/your-form-link" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary btn-large">
-                        <i class="fas fa-external-link-alt"></i>
-                        Register Now
-                    </a>
-                    <br />
-                    <small> *All prices include 18% GST</small>
-                    <br />
-                    <br />
-                    <!-- Highlight the last date using inline styles -->
-                    <span class="highlight-text" style="color: red; font-weight: bold;">Last date of registration is
-                        <b>5th September, 2025</b>.</span>
-
-                </div>
-            </div>
-            <br />
-
-            <!-- Pricing Information - Direct Display -->
-            <div class="pricing-container">
-                <h2 class="about-subtitle">Registration Fees</h2>
-
-                <!-- Offline Participation -->
-                <div class="participation-sections">
-                    <div>
-                        <h4 class="participation-title">
-                            <i class="fas fa-users"></i>
-                            Offline Participation
-                        </h4>
-                        <div class="pricing-grid-compact">
-                            <div class="pricing-card-compact offline-card">
-                                <h5>Students & Scholars</h5>
-                                <div class="price-amount-compact">₹3,500</div>
-                            </div>
-                            <div class="pricing-card-compact offline-card">
-                                <h5>Post Docs</h5>
-                                <div class="price-amount-compact">₹7,000</div>
-                            </div>
-                            <div class="pricing-card-compact offline-card">
-                                <h5>Faculty & Scientists</h5>
-                                <div class="price-amount-compact">₹8,000</div>
-                            </div>
-                            <div class="pricing-card-compact offline-card">
-                                <h5>Industry Professionals</h5>
-                                <div class="price-amount-compact">₹12,000</div>
-                            </div>
-                        </div>
-                        <div class="benefits-hover-container">
-                            <div class="benefits-hover-trigger">
-                                <i class="fas fa-info-circle"></i>
-                                <span>What's included?</span>
-                            </div>
-                            <div class="registration-benefits">
-                                <h6>Registration includes:</h6>
-                                <ul class="benefits-list">
-                                    <li><i class="fas fa-check"></i> Access to all lectures</li>
-                                    <li><i class="fas fa-check"></i> Book of Abstracts</li>
-                                    <li><i class="fas fa-check"></i> Registration kit</li>
-                                    <li><i class="fas fa-check"></i> Souvenir</li>
-                                    <li><i class="fas fa-check"></i> Breakfast, Lunch & Gala Dinner</li>
-                                    <li><i class="fas fa-check"></i> Participation Certificate</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Online Participation -->
-                    <div>
-                        <h4 class="participation-title">
-                            <i class="fas fa-laptop"></i>
-                            Online Participation
-                        </h4>
-                        <div class="pricing-grid-compact">
-                            <div class="pricing-card-compact online-card">
-                                <h5>Students & Scholars</h5>
-                                <div class="price-amount-compact">₹2,000</div>
-                            </div>
-                            <div class="pricing-card-compact online-card">
-                                <h5>Post Docs</h5>
-                                <div class="price-amount-compact">₹3,500</div>
-                            </div>
-                            <div class="pricing-card-compact online-card">
-                                <h5>Faculty & Scientists</h5>
-                                <div class="price-amount-compact">₹4,000</div>
-                            </div>
-                            <div class="pricing-card-compact online-card">
-                                <h5>Industry Professionals</h5>
-                                <div class="price-amount-compact">₹7,000</div>
-                            </div>
-                        </div>
-                        <div class="benefits-hover-container">
-                            <div class="benefits-hover-trigger">
-                                <i class="fas fa-info-circle"></i>
-                                <span>What's included?</span>
-                            </div>
-                            <div class="registration-benefits">
-                                <h6>Registration includes:</h6>
-                                <ul class="benefits-list">
-                                    <li><i class="fas fa-check"></i> Registration kit</li>
-                                    <li><i class="fas fa-check"></i> Book of Abstracts</li>
-                                    <li><i class="fas fa-check"></i> Participation Certificate</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="importantdates" class="important-dates">
-                    <h4 class="about-subtitle">Important Dates</h4>
-                    <div class="dates-table">
-                        <div class="date-row">
-                            <div class="date-label">Abstract Submission Start Date</div>
-                            <div class="date-value">1st June, 2025</div>
-                        </div>
-                        <div class="date-row">
-                            <div class="date-label">Abstract Submission Ends</div>
-                            <div class="date-value">15th August, 2025</div>
-                        </div>
-                        <div class="date-row">
-                            <div class="date-label">Abstract Acceptance Notification</div>
-                            <div class="date-value">30th August, 2025</div>
-                        </div>
-                        <div class="date-row">
-                            <div class="date-label">Last Date of Registration</div>
-                            <div class="date-value">5th September, 2025</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Travel Section -->
-                <div id="travel">
-                    <h2 class="about-subtitle">How to Reach Us</h2>
-                    <div class="department-content travel-content">
-                        <div class="travel-method">
-                            <h4><i class="fas fa-train"></i> By Rail</h4>
-                            <p>IIT(ISM) Dhanbad is just 2.8 km from Dhanbad Railway Station, one of the busiest stations in the region with direct trains to major cities across India. Taxis, Ola cabs, autorickshaws, and e-rickshaws are easily available from the station to the campus.</p>
-                        </div>
-
-                        <div class="travel-method">
-                            <h4><i class="fas fa-road"></i> By Road</h4>
-                            <p>Dhanbad is well connected by National Highways 18 and 19, linking it to cities like Ranchi, Kolkata, Jamshedpur, and Bokaro. Regular bus services operate on these routes for convenient travel.</p>
-                        </div>
-
-                        <div class="travel-method">
-                            <h4><i class="fas fa-plane"></i> By Air</h4>
-                            <p>Nearby airports include:</p>
-                            <ul class="airport-list">
-                                <li>Kazi Nazrul Islam Airport, Durgapur – 85 km</li>
-                                <li>Deoghar Airport, Deoghar – 110 km</li>
-                                <li>Birsa Munda Airport, Ranchi – 140 km</li>
-                                <li>Netaji Subhas Chandra Bose Airport, Kolkata  – 269 km</li>
-                            </ul>
-                            <p>From these airports, taxis and buses are available to reach Dhanbad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div id="accommodation">
-                    <h2 class="about-subtitle">Accommodation</h2>
-                    <div class="department-content">
-                        <p>Efforts shall be made to accommodate the participants inside the campus. Allocation of
-                            hostels (for student participants) and institute guest houses (for other participants) shall
-                            be done on a first-come, first-served basis and involve payment. Besides the campus, there
-                            are many hotels with accommodation in Dhanbad, which participants can book. Please write to
-                            <a href="mailto:crisp2025@iitism.ac.in">crisp2025@iitism.ac.in</a> after registration for
-                            accommodation
-                            arrangements.
-                        </p>
-                    </div>
-                </div>
-                
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- Sponsors Section -->
-    <section id="sponsors" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Sponsors & Collaborators</h2>
-            <div class="sponsors-content">
-
-                <!-- Technical Partner Section -->
-                <div class="technical-partner-section">
-                    <h3 class="sponsor-category-title">Technical Collaborator</h3>
-                    <div class="technical-partner-grid"></div>
-                    <img src="texmin-logo.png" alt="Texmin Logo" class="sponsor-logo">
-                </div>
-            </div>
-
-            <!-- Sponsors Section -->
-            <div class="sponsors-section"></div>
-            <h3 class="sponsor-category-title">Sponsors (TBA)</h3>
-            <!-- <div class="sponsors-grid">
-                            <img src="placeholder-sponsor-logo.png" alt="Sponsor 1" class="sponsor-logo">
-                            <img src="placeholder-sponsor-logo.png" alt="Sponsor 2" class="sponsor-logo">
-                            <img src="placeholder-sponsor-logo.png" alt="Sponsor 3" class="sponsor-logo">
-                    </div> -->
-        </div>
-
-        <div id="sponsors-becomeone" class="sponsorship-info">
-            <h3>Become a Sponsor</h3>
-            <p>Join us as a sponsor and connect with leading professionals in critical metals technology.
-                Various sponsorship packages available.</p>
-
-            <!-- Sponsorship Tiers -->
-            <div class="sponsorship-tiers">
-                <!-- Diamond Sponsorship -->
-                <div class="sponsorship-tier diamond-tier">
-                    <div class="tier-header">
-                        <h4><i class="fas fa-gem"></i> DIAMOND</h4>
-                        <div class="tier-amount">Minimum INR 3 LAKHS</div>
-                    </div>
-                    <ul class="tier-benefits">
-                        <li><i class="fas fa-check"></i> Complimentary registration for 4 participants</li>
-                        <li><i class="fas fa-check"></i> One stall</li>
-                        <li><i class="fas fa-check"></i> Name & logo on conference website, conference booklet,
-                            banners, participant certificate</li>
-                        <li><i class="fas fa-check"></i> Inside full page for message in conference booklet</li>
-                        <li><i class="fas fa-check"></i> Name and logo in banners</li>
-                    </ul>
-                </div>
-
-                <!-- Platinum Sponsorship -->
-                <div class="sponsorship-tier platinum-tier">
-                    <div class="tier-header">
-                        <h4><i class="fas fa-medal"></i> PLATINUM</h4>
-                        <div class="tier-amount">Minimum INR 2 LAKHS</div>
-                    </div>
-                    <ul class="tier-benefits">
-                        <li><i class="fas fa-check"></i> Complimentary registration for 3 participants</li>
-                        <li><i class="fas fa-check"></i> One stall</li>
-                        <li><i class="fas fa-check"></i> Name & logo on conference website, conference booklet,
-                            banners, participant certificate</li>
-                        <li><i class="fas fa-check"></i> Inside half page for message in conference booklet</li>
-                        <li><i class="fas fa-check"></i> Name and logo in banners</li>
-                    </ul>
-                </div>
-
-                <!-- Gold Sponsorship -->
-                <div class="sponsorship-tier gold-tier">
-                    <div class="tier-header">
-                        <h4><i class="fas fa-trophy"></i> GOLD</h4>
-                        <div class="tier-amount">Minimum INR 1 LAKH</div>
-                    </div>
-                    <ul class="tier-benefits">
-                        <li><i class="fas fa-check"></i> Complimentary registration for 2 participants</li>
-                        <li><i class="fas fa-check"></i> One stall</li>
-                        <li><i class="fas fa-check"></i> Name & logo on conference website and banners</li>
-                        <li><i class="fas fa-check"></i> Name and logo in conference booklet-sponsors list</li>
-                    </ul>
-                </div>
-
-                <!-- Silver Sponsorship -->
-                <div class="sponsorship-tier silver-tier">
-                    <div class="tier-header">
-                        <h4><i class="fas fa-star"></i> SILVER</h4>
-                        <div class="tier-amount">Minimum INR 50,000/-</div>
-                    </div>
-                    <ul class="tier-benefits">
-                        <li><i class="fas fa-check"></i> Complimentary registration for 1 participant</li>
-                        <li><i class="fas fa-check"></i> One stand for poster</li>
-                        <li><i class="fas fa-check"></i> Name & logo on conference website</li>
-                        <li><i class="fas fa-check"></i> Name and logo in conference booklet-sponsors list</li>
-                    </ul>
-                </div>
-            </div>
-
-            <a href="#contact" class="btn btn-primary">Contact for Sponsorship</a>
-        </div>
-        </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-light">
         <div class="container">
             <h2 class="section-title">Contact Information</h2>
             <div class="contact-content">
