@@ -333,6 +333,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const onlineAccordion = document.getElementById('online-content');
     const onlineIcon = document.getElementById('online-icon');
     
+    // Keep registration accordions open by default
     if (offlineAccordion && offlineIcon) {
         offlineAccordion.classList.add('active');
         offlineIcon.classList.add('rotated');
@@ -342,6 +343,15 @@ document.addEventListener('DOMContentLoaded', function() {
         onlineAccordion.classList.add('active');
         onlineIcon.classList.add('rotated');
     }
+    
+    // Initialize committee accordions as closed (default state)
+    const coreCommitteeAccordion = document.getElementById('core-committee-content');
+    const coreCommitteeIcon = document.getElementById('core-committee-icon');
+    const advisoryCommitteeAccordion = document.getElementById('advisory-committee-content');
+    const advisoryCommitteeIcon = document.getElementById('advisory-committee-icon');
+    
+    // These will remain closed by default (no active class added)
+    // Icons will point down by default (no rotated class added)
 });
 
 // Update navbar scroll behavior to work with dark mode

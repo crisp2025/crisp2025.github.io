@@ -1373,7 +1373,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .accordion-content.active {
-    max-height: 800px; /* Significantly increased from 400px */
+    max-height: 1500px; /* Significantly increased from 800px to accommodate long content */
 }
 
 /* Compact Pricing Styles */
@@ -1717,7 +1717,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Adjust accordion content height for benefits */
 .accordion-content.active {
-    max-height: 800px; /* Updated to match above */
+    max-height: 1500px; /* Updated to match above */
 }
 
 /* Mobile responsiveness for benefits */
@@ -1727,7 +1727,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .accordion-content.active {
-        max-height: 900px; /* Increased for tablet view with 2 columns */
+        max-height: 1800px; /* Increased for tablet view with 2 columns */
     }
 }
 
@@ -1738,7 +1738,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .accordion-content.active {
-        max-height: 1200px; /* Significantly increased for mobile single column */
+        max-height: 2500px; /* Significantly increased for mobile single column */
     }
     
     .registration-benefits {
@@ -2709,7 +2709,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     font-style: italic;
     padding: 0.75rem 1rem;
-    background: rgba(0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4);
     border-left: 4px solid #bfdbfe;
     border-radius: 0 8px 8px 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -3686,7 +3686,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .accordion-content.active {
-    max-height: 800px; /* Significantly increased from 400px */
+    max-height: 1500px; /* Significantly increased from 800px to accommodate long content */
 }
 
 /* Compact Pricing Styles */
@@ -4030,7 +4030,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Adjust accordion content height for benefits */
 .accordion-content.active {
-    max-height: 800px; /* Updated to match above */
+    max-height: 1500px; /* Updated to match above */
 }
 
 /* Mobile responsiveness for benefits */
@@ -4040,7 +4040,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .accordion-content.active {
-        max-height: 900px; /* Increased for tablet view with 2 columns */
+        max-height: 1800px; /* Increased for tablet view with 2 columns */
     }
 }
 
@@ -4051,7 +4051,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .accordion-content.active {
-        max-height: 1200px; /* Significantly increased for mobile single column */
+        max-height: 2500px; /* Significantly increased for mobile single column */
     }
     
     .registration-benefits {
