@@ -350,11 +350,10 @@ h1, h2, h3, h4, h5, h6 {
 .hero-text {
     text-align: center;
     width: 100%;
-    max-width: 800px;
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     color: #ffffff;
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -364,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .first-letter-big{
-    font-size: 3.0rem;
+    font-size: 2.75rem;
 }
 .hero-titlesub {
     font-size: 2rem;
@@ -377,7 +376,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2rem;
     color: #f1f5f9;
     margin-bottom: 1.5rem;
-    font-weight: 400;
+    font-weight: bold;
+    /* italic */
+    /* font-style: italic; */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
@@ -1222,7 +1223,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-theme="dark"] .hero-subtitle {
-    color: var(--text-secondary);
+    color: var(--text-accent);
 }
 
 [data-theme="dark"] .hero-description {
