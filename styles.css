@@ -2250,6 +2250,9 @@ h1, h2, h3, h4, h5, h6 {
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         padding: 2rem 0;
+        overflow: scroll;
+        /* max height = device hight */
+        max-height: calc(100vh - 70px);
     }
     
     .nav-menu.active {
