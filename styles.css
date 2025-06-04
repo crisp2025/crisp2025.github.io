@@ -1474,6 +1474,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
     text-align: left;
 }
+/* Center the last item (5th item) by spanning both columns */
+.sponsorship-tier:nth-child(5) {
+    grid-column: 1 / -1;
+    max-width: 450px;
+    margin: 0 auto;
+}
 
 .sponsorship-tier {
     background: white;
@@ -1526,6 +1532,13 @@ h1, h2, h3, h4, h5, h6 {
     border-color: #a8a8a8;
 }
 
+.bronze-tier {
+    --tier-color-1: #CD7F32;
+    --tier-color-2: #CD7E32;
+    border-color: #CD7E32;
+    margin: auto;
+}
+
 .tier-header {
     text-align: center;
     margin-bottom: 1.5rem;
@@ -1562,6 +1575,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .silver-tier .tier-header h4 {
     color: #888;
+}
+
+.bronze-tier .tier-header h4 {
+    color: #CD7E32;
 }
 
 .tier-amount {
@@ -1666,6 +1683,11 @@ h1, h2, h3, h4, h5, h6 {
 .silver-tier:hover {
     border-color: #a8a8a8;
     box-shadow: 0 12px 35px rgba(168, 168, 168, 0.2);
+}
+
+.bronze-tier:hover {
+    border-color: #CD7E32;
+    box-shadow: 0 12px 35px rgba(205, 126, 50, 0.2);
 }
 
 /* Abstract Submission Section */
