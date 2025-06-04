@@ -1477,7 +1477,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Center the last item (5th item) by spanning both columns */
 .sponsorship-tier:nth-child(5) {
     grid-column: 1 / -1;
-    max-width: 450px;
     margin: 0 auto;
 }
 
@@ -1515,8 +1514,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .platinum-tier {
-    --tier-color-1: #e5e5e5;
-    --tier-color-2: #c0c0c0;
+    --tier-color-1: #a0b2c6;
+    --tier-color-2: #a0b2c6;
     border-color: #c0c0c0;
 }
 
@@ -1566,7 +1565,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .platinum-tier .tier-header h4 {
-    color: #888;
+    color: #a0b2c6;
 }
 
 .gold-tier .tier-header h4 {
@@ -1671,8 +1670,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .platinum-tier:hover {
-    border-color: #c0c0c0;
-    box-shadow: 0 12px 35px rgba(192, 192, 192, 0.2);
+    border-color: #a0b2c6;
+    box-shadow: 0 12px 35px rgba(160, 178, 198, 0.2);
 }
 
 .gold-tier:hover {
